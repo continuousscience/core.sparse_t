@@ -1,4 +1,3 @@
-#include "header.h"
 extern "C" {
 char *show(const SparseMat *A) {
     int m = A->nonZeros();

@@ -32,8 +32,8 @@ extern "C" {
 #include <sil_ext.h>
 #include <proto_prim.h>
 
-//static const unsigned char sparse_hash[HASH_SIZE+1] = /*!hash!*/;
-static const unsigned char sparse_hash[HASH_SIZE+1] = "";
+static const unsigned char sparse_hash[HASH_SIZE+1] = /*!hash!*/;
+//static const unsigned char sparse_hash[HASH_SIZE+1] = "";
 
 static inline int sil_pushSparse(sil_State *S, SparseMat *M) {
     return sil_newuserdata(S, sparse_hash, M);
